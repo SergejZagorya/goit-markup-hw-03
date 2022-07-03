@@ -18,17 +18,37 @@
   --main-weight: 400;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+
+.list {
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
+}
 /* body */
 
 .body {
+  margin: 0;
   font-family: var(--main-font);
   font-style: normal;
   font-weight: var(--main-weight);
   font-size: var(--title-size);
-}
-
-.list {
-  list-style: none;
 }
 
 a {
@@ -67,18 +87,24 @@ a {
 /* header */
 .page-header {
   background-color: var(--primary-background-color);
-  /* width: 1600px;
-  height: 80px; */
+  outline: 3px solid tomato;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1170px;
+  outline: 2px solid tomato;
+  background-color: #ccc;
 }
 
 .logo {
   width: 145px;
-  height: 31px;
   font-family: var(--accent-font);
   font-weight: var(--head-weight);
   font-size: 26px;
   line-height: 1.5;
   color: var(--hero-background-color);
+  outline: 3px solid tomato;
 }
 
 .logo-accent {
@@ -89,10 +115,10 @@ a {
 }
 
 .site-nav {
-  padding-left: 0;
-  margin-top: 0;
-  width: 500px;
-  height: 16px;
+  width: 370px;
+  padding: 0%;
+  outline: 3px solid tomato;
+  /* display: inline-block; */
 }
 
 .nav-item {
@@ -110,14 +136,16 @@ a {
 }
 
 .contakt {
-  padding-left: 0;
   width: 400px;
-  height: 16px;
+  outline: 3px solid tomato;
+  margin: 0;
+  padding-left: 0;
 }
 
 .contakt-item {
-  display: inline;
+  /* display: inline; */
   margin-right: 50px;
+  display: inline-block;
 }
 
 .header-contakt {
@@ -129,34 +157,43 @@ a {
 
 .hero {
   background-color: var(--hero-background-color);
-  width: 1300px;
-  height: 300px;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+  outline: 2px solid tomato;
 }
 
 .hero-title {
-  text-align: center;
+  margin: 0 auto 30px auto;
+  padding-top: 200px;
   width: 570px;
-  height: 120px;
   font-weight: var(--hero-weight);
   font-size: var(--hero-size);
   line-height: 1.3;
   color: var(--primary-background-color);
-  padding: 0px 50px 20px 300px;
 }
 
 .hero-button {
-  width: 200px;
-  height: 50px;
+  margin: 0px auto 150px;
+  padding: 10px 32px;
+  min-width: 200px;
   border: none;
   background-color: var(--accent-color);
   font-weight: var(--head-weight);
   font-size: var(--note-size);
   line-height: 1.8;
   border-radius: 4px;
-  margin: 0px 450px 0px 480px;
+  display: inline-block;
+  /* margin: 0px auto; */
 }
 
 /* Наши преймущества  */
+
+.advant-card {
+  display: inline-block;
+  margin: 94px 15px 94px 0px;
+}
 
 .advantages-subtitle {
   font-weight: var(--head-weight);
@@ -164,11 +201,11 @@ a {
   line-height: 1.1px;
   color: var(--title-color);
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantages-text {
-  width: 259px;
-  height: 75px;
+  width: 270px;
   font-weight: var(--main-weight);
   font-size: var(--text-size);
   line-height: 1.7;
