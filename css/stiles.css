@@ -1,0 +1,214 @@
+:root {
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --hero-background-color: #2f303a;
+
+  --title-color: #212121;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+
+  --main-font: "Roboto", sans-serif;
+  --accent-font: "Raleway", sans-serif;
+  --hero-size: 44px;
+  --title-size: 36px;
+  --note-size: 16px;
+  --text-size: 14px;
+  --hero-weight: 900;
+  --head-weight: 700;
+  --main-weight: 400;
+}
+
+.body {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: var(--main-weight);
+  font-size: var(--text-size);
+  color: var(--text-color);
+  background-color: var(--primary-background-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--title-color);
+}
+.list {
+  list-style: none;
+  font-style: normal;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.curent {
+  color: var(--accent-color);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--accent-color);
+}
+
+/* Header */
+
+.logo {
+  font-family: var(--accent-font);
+  font-weight: var(--head-weight);
+  font-size: 26px;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+/* кнопки навигации */
+.nav {
+  font-weight: 500;
+  font-size: var(--text-size);
+  line-height: 16px;
+}
+/* адрес в header  */
+.header-address {
+  font-weight: 500;
+  font-size: var(--text-size);
+  line-height: 16px;
+  color: var(--text-color);
+}
+/* скрытый заголовок преймущества */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* hero */
+.hero {
+  background-color: var(--hero-background-color);
+}
+/* заголовок героя */
+.hero-title {
+  margin: 0 auto;
+  font-weight: var(--hero-weight);
+  font-size: var(--hero-size);
+  line-height: 1.36;
+  color: var(--primary-background-color);
+  text-align: center;
+}
+/* кнопка героя */
+.hero-button {
+  margin: 0 auto;
+  min-width: 200px;
+  background-color: var(--accent-color);
+  font-weight: var(--head-weight);
+  font-size: var(--note-size);
+  color: var(--primary-background-color);
+  line-height: 1.88;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+/* Преймущества  */
+.advant-title {
+  margin: 0;
+  font-weight: var(--head-weight);
+  font-size: var(--text-size);
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+/* текст преймущества */
+.advant-text {
+  margin: 0;
+  line-height: 1.71;
+}
+/* названия секций */
+.title {
+  margin: 0;
+  font-weight: var(--head-weight);
+  font-size: var(--title-size);
+  line-height: 1.17;
+  /* text-align: center; */
+  color: var(--title-color);
+}
+
+.team-section {
+  background-color: var(--secondary-background-color);
+}
+/* имя фамилия */
+.team-name {
+  margin: 0;
+  font-weight: 500;
+  font-size: var(--note-size);
+  line-height: 1.18;
+  /* text-align: center; */
+  color: var(--title-color);
+}
+
+/* должности */
+.team-descr {
+  margin: 0;
+  font-size: var(--note-size);
+  line-height: 1.18;
+  /* text-align: center; */
+  color: var(--text-color);
+}
+
+.footer {
+  background-color: var(--title-color);
+}
+
+.footer-logo {
+  color: var(--primary-background-color);
+}
+
+.footer-address {
+  line-height: 1.71;
+  color: var(--primary-background-color);
+}
+
+.contakts {
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ПОРТФОЛИО */
+.portf-btn {
+  font-weight: 500;
+  font-size: var(--note-size);
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.portf-name {
+  margin: 0;
+  font-weight: var(--head-weight);
+  font-size: var(--note-size);
+  line-height: 1.18;
+  /* text-align: center; */
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.portf-descr {
+  margin: 0;
+  font-size: var(--note-size);
+  line-height: 1.18;
+  /* text-align: center; */
+  color: var(--text-color);
+}
