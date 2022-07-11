@@ -18,7 +18,7 @@
   --main-weight: 400;
 }
 
-* {
+html {
   box-sizing: border-box;
 }
 
@@ -36,10 +36,14 @@ p {
   margin: 0;
 }
 
-.list {
-  margin-top: 0;
-  padding-left: 0;
-  list-style: none;
+a {
+  text-decoration: none;
+  color: var(--title-color);
+  display: inline-block;
+}
+
+.curent {
+  color: var(--accent-color);
 }
 
 .link:hover,
@@ -47,26 +51,11 @@ p {
   color: var(--accent-color);
 }
 
-.body {
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: var(--main-weight);
-  font-size: var(--text-size);
-  color: var(--text-color);
-  background-color: var(--primary-background-color);
-}
-
-a {
-  text-decoration: none;
-  color: var(--title-color);
-}
-.list {
+li {
+  margin-top: 0;
+  padding-left: 0;
   list-style: none;
   font-style: normal;
-}
-
-.curent {
-  color: var(--accent-color);
 }
 
 button {
@@ -80,9 +69,31 @@ button:focus {
   background-color: var(--accent-color);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  outline: 5px solid tomato;
+}
+
+.body {
+  margin: 0;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: var(--main-weight);
+  font-size: var(--text-size);
+  color: var(--text-color);
+  background-color: var(--primary-background-color);
+}
+
 /* Header */
 
+.page-header {
+  background-color: aquamarine;
+}
+
 .logo {
+  margin: 25px 93px 25px 15px;
   font-family: var(--accent-font);
   font-weight: var(--head-weight);
   font-size: 26px;
@@ -104,6 +115,39 @@ button:focus {
   line-height: 16px;
   color: var(--text-color);
 }
+
+/* hero */
+.hero {
+  background-color: var(--hero-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+/* заголовок героя */
+.hero-title {
+  margin: 0 auto 30px;
+  text-transform: uppercase;
+  font-weight: var(--hero-weight);
+  font-size: var(--hero-size);
+  line-height: 1.36;
+  color: var(--primary-background-color);
+  text-align: center;
+}
+/* кнопка героя */
+.hero-button {
+  margin: 0 auto;
+  padding: 10px 32px;
+  min-width: 200px;
+  background-color: var(--accent-color);
+  font-weight: var(--head-weight);
+  font-size: var(--note-size);
+  color: var(--primary-background-color);
+  line-height: 1.88;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+/* Преймущества  */
 /* скрытый заголовок преймущества */
 .visually-hidden {
   position: absolute;
@@ -117,43 +161,17 @@ button:focus {
   clip-path: inset(50%);
   margin: -1px;
 }
-
-/* hero */
-.hero {
-  background-color: var(--hero-background-color);
+.advant {
 }
-/* заголовок героя */
-.hero-title {
-  margin: 0 auto;
-  font-weight: var(--hero-weight);
-  font-size: var(--hero-size);
-  line-height: 1.36;
-  color: var(--primary-background-color);
-  text-align: center;
-}
-/* кнопка героя */
-.hero-button {
-  margin: 0 auto;
-  min-width: 200px;
-  background-color: var(--accent-color);
-  font-weight: var(--head-weight);
-  font-size: var(--note-size);
-  color: var(--primary-background-color);
-  line-height: 1.88;
-  display: block;
-  align-items: center;
-  text-align: center;
-}
-
-/* Преймущества  */
 .advant-title {
-  margin: 0;
+  margin: 0 auto 10px;
   font-weight: var(--head-weight);
   font-size: var(--text-size);
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--title-color);
 }
+
 /* текст преймущества */
 .advant-text {
   margin: 0;
@@ -161,12 +179,12 @@ button:focus {
 }
 /* названия секций */
 .title {
-  margin: 0;
+  margin-bottom: 50px;
   font-weight: var(--head-weight);
   font-size: var(--title-size);
   line-height: 1.17;
-  /* text-align: center; */
   color: var(--title-color);
+  text-align: center;
 }
 
 .team-section {
