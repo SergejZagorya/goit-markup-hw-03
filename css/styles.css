@@ -73,7 +73,7 @@ button:focus {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 5px solid tomato;
+  /* outline: 5px solid tomato; */
 }
 
 .body {
@@ -87,10 +87,6 @@ button:focus {
 }
 
 /* Header */
-
-.page-header {
-  /* background-color: aquamarine; */
-}
 
 .logo {
   margin: 25px 93px 25px 15px;
@@ -107,6 +103,16 @@ button:focus {
   font-weight: 500;
   font-size: var(--text-size);
   line-height: 16px;
+  /* display: flex; */
+}
+
+/* .header-cont {
+  display: flex;
+  align-items: center;
+} */
+
+.nav-list {
+  /* display: flex; */
 }
 /* адрес в header  */
 .header-address {
@@ -148,7 +154,7 @@ button:focus {
 }
 
 /* Преймущества  */
-/* скрытый заголовок преймущества */
+/* скрытый заголовок  */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -161,7 +167,8 @@ button:focus {
   clip-path: inset(50%);
   margin: -1px;
 }
-.advant {
+.advant-list {
+  display: flex;
 }
 .advant-title {
   margin: 0 auto 10px;
@@ -185,6 +192,16 @@ button:focus {
   line-height: 1.17;
   color: var(--title-color);
   text-align: center;
+}
+
+.branches-list {
+  display: flex;
+}
+
+/* Наша команда */
+
+.team-list {
+  display: flex;
 }
 
 .team-section {
@@ -235,6 +252,16 @@ button:focus {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+}
+
+.portf-list {
+  display: flex;
+  justify-content: center;
+}
+
+.portf-items {
+  /* display: flex; */
+  align-content: stretch;
 }
 
 .portf-name {
