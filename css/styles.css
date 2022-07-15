@@ -18,6 +18,11 @@
   --main-weight: 400;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .body {
   font-family: var(--main-font);
   font-style: normal;
@@ -41,7 +46,7 @@ a {
   color: var(--accent-color);
 }
 
-.curent {
+.current {
   color: var(--accent-color);
 }
 
@@ -71,13 +76,13 @@ button:focus {
 .nav {
   font-weight: 500;
   font-size: var(--text-size);
-  line-height: 16px;
+  line-height: 1.14;
 }
 /* адрес в header  */
 .header-address {
   font-weight: 500;
   font-size: var(--text-size);
-  line-height: 16px;
+  line-height: 1.14;
   color: var(--text-color);
 }
 /* скрытый заголовок преймущества */
@@ -110,6 +115,7 @@ button:focus {
 /* кнопка героя */
 .hero-button {
   margin: 0 auto;
+  padding: 10px 32px;
   min-width: 200px;
   background-color: var(--accent-color);
   font-weight: var(--head-weight);
@@ -187,6 +193,7 @@ button:focus {
 
 /* ПОРТФОЛИО */
 .portf-btn {
+  padding: 6px 22px;
   font-weight: 500;
   font-size: var(--note-size);
   line-height: 1.62;
