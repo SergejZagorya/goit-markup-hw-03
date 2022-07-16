@@ -18,11 +18,11 @@
   --main-weight: 400;
 }
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 .body {
   font-family: var(--main-font);
   font-style: normal;
@@ -32,11 +32,27 @@
   background-color: var(--primary-background-color);
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: aqua;
+  display: flex;
+}
+
 a {
   text-decoration: none;
   color: var(--title-color);
 }
+
+ul {
+}
 .list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
   font-style: normal;
 }
@@ -61,30 +77,6 @@ button:focus {
   background-color: var(--accent-color);
 }
 
-/* Header */
-
-.logo {
-  font-family: var(--accent-font);
-  font-weight: var(--head-weight);
-  font-size: 26px;
-}
-
-.accent {
-  color: var(--accent-color);
-}
-/* кнопки навигации */
-.nav {
-  font-weight: 500;
-  font-size: var(--text-size);
-  line-height: 1.14;
-}
-/* адрес в header  */
-.header-address {
-  font-weight: 500;
-  font-size: var(--text-size);
-  line-height: 1.14;
-  color: var(--text-color);
-}
 /* скрытый заголовок преймущества */
 .visually-hidden {
   position: absolute;
@@ -99,13 +91,70 @@ button:focus {
   margin: -1px;
 }
 
+/* Header */
+
+.logo {
+  font-family: var(--accent-font);
+  font-weight: var(--head-weight);
+  font-size: 26px;
+  margin-right: 93px;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+/* кнопки навигации */
+.page-header {
+  align-items: center;
+  background-color: var(--primary-background-color);
+}
+.nav {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  font-size: var(--text-size);
+  line-height: 1.14;
+}
+
+.nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav .list,
+.address {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav .item + .item {
+  margin-left: 50px;
+}
+/* адрес в header  */
+.header-address {
+  display: flex;
+
+  font-weight: 500;
+  font-size: var(--text-size);
+  line-height: 1.14;
+  color: var(--text-color);
+}
+
+.address .item + .item {
+  margin-left: 50px;
+}
+
 /* hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--hero-background-color);
+  outline: 3px solid tomato;
 }
 /* заголовок героя */
 .hero-title {
-  margin: 0 auto;
+  margin: 0 auto 30px;
   font-weight: var(--hero-weight);
   font-size: var(--hero-size);
   line-height: 1.36;
@@ -128,6 +177,10 @@ button:focus {
 }
 
 /* Преймущества  */
+.advant {
+  outline: 3px solid tomato;
+}
+
 .advant-title {
   margin: 0;
   font-weight: var(--head-weight);
@@ -141,7 +194,11 @@ button:focus {
   margin: 0;
   line-height: 1.71;
 }
-/* названия секций */
+
+.branches {
+  outline: 3px solid tomato;
+}
+/* стилизация h2 */
 .title {
   margin: 0;
   font-weight: var(--head-weight);
@@ -153,6 +210,7 @@ button:focus {
 
 .team-section {
   background-color: var(--secondary-background-color);
+  outline: 3px solid tomato;
 }
 /* имя фамилия */
 .team-name {
