@@ -1,4 +1,4 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
 
 --primary-background-color: #ffffff;
 --secondary-background-color: #f5f4fa;
