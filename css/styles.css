@@ -125,14 +125,17 @@ body {
 }
 
 .logo {
-  padding-top: 24px;
-  padding-bottom: 24px;
   font-family: var(--accent-font);
   font-weight: var(--head-weight);
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-color);
+}
+
+.header-logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .accent {
   color: var(--accent-color);
